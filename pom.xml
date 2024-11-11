@@ -11,21 +11,10 @@
     <groupId>com.weilai</groupId>
     <artifactId>token</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>token</name>
-    <description>token</description>
-    <url/>
-    <licenses>
-        <license/>
-    </licenses>
-    <developers>
-        <developer/>
-    </developers>
-    <scm>
-        <connection/>
-        <developerConnection/>
-        <tag/>
-        <url/>
-    </scm>
+    <packaging>pom</packaging>
+    <modules>
+        <module>refresh</module>
+    </modules>
     <properties>
         <java.version>17</java.version>
     </properties>
@@ -33,6 +22,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+            <version>3.18.1</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
